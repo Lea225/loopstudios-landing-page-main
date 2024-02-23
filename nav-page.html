@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alata:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Loopstudios landing page</title>
+    <script src="nav-page.js" defer></script>
+</head>
+<body>
+    <style>
+        body{
+            padding: 0 30px;
+            margin: 0;
+            background-color: hsl(0, 0%, 0%);
+        }
+        header{
+            padding: 50px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav{
+            margin-top: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+        a{
+            font-size: 1.5em;
+            text-transform: uppercase;
+            color: hsla(0, 0%, 100%, 0.8);
+            padding-bottom: 40px;
+            text-decoration: none;
+            font-family: 'Josefin Sans',sans-serif;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+    <header>
+        <img src="images/logo.svg" alt="logo">
+        <img id="icon-close" src="images/icon-close.svg" alt="icon-close">
+    </header>
+    <nav>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Events</a>
+        <a href="#">Products</a>
+        <a href="#">Support</a> 
+      </nav>
+</body>
+</html>

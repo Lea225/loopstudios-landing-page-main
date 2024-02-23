@@ -1,0 +1,242 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Alata',sans-serif;
+    
+}
+h1,h2,h3,.grid-images p{
+    font-weight: 300;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans',sans-serif;
+}
+a{
+    text-decoration: none;
+}
+p{
+    color: hsl(0, 0%, 55%);
+}
+section,footer{
+    padding: 0 75px;
+}
+header{
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+header img{
+    height: 4vh;
+}
+header a{
+    color: hsl(0, 0%, 100%);
+    padding-right: 20px;
+}
+header a:hover{
+    text-decoration: underline;
+    text-decoration-line: 1px;
+}
+.icon-hamburger{
+    display: none;
+}
+.section-1{
+    height: 85vh;
+    background-image: url('images/desktop/image-hero.jpg');
+    background-size: 100% cover;
+    background-repeat: no-repeat;
+}
+h1{
+    width: 40%;
+    padding: 30px;
+    font-size: 3em;
+    margin-top: 15%;
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+}
+h2{
+    font-size: 2.5em;
+}
+.section-2{
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    left: -10%;
+    margin-top: 15%;
+    position: relative;
+    padding: 50px 50px 0 70px;
+    background-color: hsl(0, 0%, 100%);
+}
+h3{
+    font-size: 2.3em;
+    color: hsl(0, 0%, 0%);
+}
+.btn-div{  
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    letter-spacing: 3px;
+    padding: 10px 30px;
+    color: hsl(0, 0%, 0%);
+    text-transform: uppercase;
+    border: 2px solid hsl(0, 0%, 41%);
+}
+.btn:hover{
+    border: none;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 0%);
+}
+.grid-images{
+    gap: 30px;
+    display: grid;
+    grid-template-rows: 500px 500px;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+.grid-images div {
+    background-size: 100% contain;
+    background-repeat: no-repeat;
+}
+.grid-images p{
+    color: hsl(0, 0%, 100%, 0.8);
+    padding: 350px 30px;
+}
+.earth{
+    background-image: url('images/desktop/image-deep-earth.jpg');
+}
+.arcade{
+    background-image: url('images/desktop/image-night-arcade.jpg');
+}
+.soocer{
+    background-image: url('images/desktop/image-soccer-team.jpg');
+}
+.grid{
+    background-image: url('images/desktop/image-grid.jpg');
+}
+.VR{
+    background-image: url('images/desktop/image-from-above.jpg');
+}
+.borealis{
+    background-image: url('images/desktop/image-pocket-borealis.jpg');
+}
+.curiosity{
+    background-image: url('images/desktop/image-curiosity.jpg');
+}
+.fisheye{
+    background-image: url('images/desktop/image-fisheye.jpg');
+}
+footer{
+    height: 35vh;
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 0%);
+}
+.footer-menu{
+    flex-direction: column;
+}
+.questions{
+    display: flex;
+}
+.questions p,.icons svg{
+    padding-right: 20px;
+    color: hsl(0, 0%, 100%);
+}
+.icons svg:hover{
+    border-width: 1px;
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+}
+.questions p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.copyright{
+    text-align: right;
+}
+@media screen and (max-width: 1000px) {
+    section,footer{
+        padding: 0 30px;
+    }
+    header nav{
+        display: none;
+    }
+    h1{
+        margin-top: 40%;
+        font-size: 3em;
+        width: 85%;
+    }
+    .icon-hamburger{
+        display: block;
+    }
+    .section-1{
+        height: 120vh;
+        background-position: center;
+        background-image: url('images/mobile/image-hero.jpg');
+    }
+    .section-2 img{
+        max-width: 100%;
+    }
+    .section-2{
+        flex-direction: column;
+    }
+    main{
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        left: 0;
+    }
+    .btn-div{
+        flex-direction: column;
+    }
+    .grid-images{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8,250px);
+        gap: 20px;
+    }
+    .grid-images div{
+        background-position: center;
+    }
+    .grid-images div p{
+        padding: 0;
+        margin-top: 35%;
+        margin-left: 5%;
+    }
+    footer{
+        height: auto;
+        text-align: center;
+        flex-direction: column;
+    }
+    footer div{
+        flex-direction: column;
+    }
+    .earth{
+        background-image: url('images/mobile/image-deep-earth.jpg');
+    }
+    .arcade{
+        background-image: url('images/mobile/image-night-arcade.jpg');
+    }
+    .soocer{
+        background-image: url('images/mobile/image-soccer-team.jpg');
+    }
+    .grid{
+        background-image: url('images/mobile/image-grid.jpg');
+    }
+    .VR{
+        background-image: url('images/mobile/image-from-above.jpg');
+    }
+    .borealis{
+        background-image: url('images/mobile/image-pocket-borealis.jpg');
+    }
+    .curiosity{
+        background-image: url('images/mobile/image-curiosity.jpg');
+    }
+    .fisheye{
+        background-image: url('images/mobile/image-fisheye.jpg');
+    }
+}

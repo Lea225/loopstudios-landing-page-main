@@ -33,10 +33,56 @@ header a{
     color: hsl(0, 0%, 100%);
     padding-right: 20px;
 }
-header a:hover{
-    text-decoration: underline;
-    text-decoration-line: 1px;
-}
+nav a,.questions p {
+    position: relative;
+    text-decoration: none;
+  }
+  
+  nav a::after,.questions p::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 35%;
+    width: 5px;
+    height: 2px;
+    background-color: hsl(0, 0%, 100%);
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  
+  nav a:hover::after,.questions p:hover::after{
+    width: calc(100% - 40px);
+    opacity: 1;
+  }
+  .icons {
+    display: flex;
+  }
+  .icon-container {
+    padding-right: 20px;
+    position: relative;
+    width: 24px; /* Ajustez la taille de l'icône selon vos besoins */
+    cursor: pointer; /* Ajoute un curseur au survol */
+  }
+  
+  .icon-container::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: hsl(0, 0%, 100%);
+    transition: width 0.3s ease;
+    opacity: 0;
+  }
+  
+  .icon-container:hover::after {
+    width: calc(100% - 25px); /* Largeur du soulignement */
+    opacity: 1;
+  }
+    
 .icon-hamburger{
     display: none;
 }
@@ -144,17 +190,12 @@ footer{
 .questions{
     display: flex;
 }
-.questions p,.icons svg{
+.questions p{
     padding-right: 20px;
     color: hsl(0, 0%, 100%);
 }
-.icons svg:hover{
-    border-width: 1px;
-    border-bottom: 1px solid hsl(0, 0%, 100%);
-}
-.questions p:hover{
+.questions p:hover,.icon:hover{
     cursor: pointer;
-    text-decoration: underline;
 }
 .copyright{
     text-align: right;
